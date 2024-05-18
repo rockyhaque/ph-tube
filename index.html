@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH Tube</title>
+    <!-- Tailwind & DaisyUI link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <style>
+        .font-inter{
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+
+</head>
+<body class="font-inter">
+    <header class="container mx-auto mt-5">
+        <!-- Navbar -->
+        <div class="navbar bg-base-100 mb-5">
+            <div class="navbar-start cursor-pointer">
+              <img src="https://i.ibb.co/8jxYjYg/Logo.png" alt="">
+            </div>
+            <div class="navbar-center">
+              <button onclick="sortByView()" class="px-4 py-2 rounded-md bg-gray-300 text-lg font-semibold cursor-pointer">Sort by view</button>
+            </div>
+            <div class="navbar-end">
+                <button id="blog" class="px-3 py-1 rounded-md text-white font-semibold bg-[#FF1F3D] cursor-pointer">Blog</button>
+              
+            </div>
+        </div>
+        <hr>
+
+        <!-- Category Section -->
+        <div id="tab-container" class="tabs flex justify-center font-bold gap-5 mt-5">
+            
+        </div>
+
+    </header>
+
+    <main class="container mx-auto mt-5 text-black ">
+        <div id="card-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-center gap-3">
+            <!-- Dynamic Videos -->
+
+        </div>
+        <div class="hidden" id="no-content">
+            <div class="flex flex-col justify-center items-center h-[600px]">
+                <img class="w-56 h-56" src="https://i.ibb.co/WksNKyV/Icon.png" alt="img" />
+                <p class="mt-10">Oops!! Sorry, There is no content here</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="./js/tube.js"></script>
+</body>
+</html>

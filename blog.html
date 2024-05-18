@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="coffee">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+
+    <!-- Tailwind & DaisyUI link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <style>
+        .font-inter{
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+
+</head>
+<body class="font-inter text-gray-300 container mx-auto">
+    <header>
+        <div class="navbar bg-base-100 mt-5">
+            <div class="flex-1">
+              <a class="btn btn-ghost normal-case text-3xl">Blog</a>
+            </div>
+            <div class="flex-none gap-2">
+              <div class="form-control">
+                <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+              </div>
+              <div class="dropdown dropdown-end">
+                
+                <ul tabindex="0" class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+                  <li>
+                    <a class="justify-between">
+                      Profile
+                      <span class="badge">New</span>
+                    </a>
+                  </li>
+                  <li><a>Settings</a></li>
+                  <li><a>Logout</a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <div>
+            <h1 class="text-center text-6xl font-bold mt-10">Welcome To MY Blog</h1>
+        </div>
+
+        
+
+        <div class="collapse collapse-plus bg-base-200 mt-20 mb-4">
+            <input type="radio" name="my-accordion-3" checked="checked" /> 
+            <div class="collapse-title text-2xl font-bold">
+                Discuss the scope of var, let, and const
+            </div>
+            <div class="collapse-content"> 
+              <p class="mt-10">
+                    <span class="text-xl font-bold">Introduction: 🧐</span>
+                    In JavaScript, variables are crucial for storing and managing data. However, their scope determines where they can be accessed or modified within your code. Let's explore the scope of three key variable declarations: var, let, and const. 📜 <br><br>
+
+                    1. var - The Global Explorer 🌍
+
+                    Scope: var variables are function-scoped. They are accessible within the function where they are declared or globally if declared outside any function.
+                    Icon: 🌍
+                    Emoji: 🌐 <br><br>
+                    2. let - The Block Challenger 🧱
+
+                    Scope: let variables are block-scoped. They are accessible only within the block where they are defined.
+                    Icon: 🧱
+                    Emoji: 🧊 <br><br><br>
+                    3. const - The Immutable Sentinel 🔒
+
+                    Scope: const variables are also block-scoped, just like let. However, they cannot be reassigned once they are given a value. Think of them as sentinels guarding your data!
+                    Icon: 🔒
+                    Emoji: 🚫
+                    When to Use Each: 🤔 <br><br><br>  
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-200 mb-4">
+            <input type="radio" name="my-accordion-3" /> 
+            <div class="collapse-title text-2xl font-bold">
+              Tell us the use cases of null and undefined
+            </div>
+            <div class="collapse-content"> 
+              <p> 
+                <br>
+                    🔵 `null`: The intentional absence of a value, often used as a placeholder or for initialization.
+                <br><br>
+                    🔴 `undefined`: Default value for uninitialized variables or function parameters.
+
+                <br><br><br>
+
+
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" /> 
+            <div class="collapse-title text-2xl font-bold">
+              What do you mean by REST API?
+            </div>
+            <div class="collapse-content"> 
+              <p>
+                REST, which stands for Representational State Transfer, is an architectural style for designing networked applications. APIs (Application Programming Interfaces) are the pathways that allow different software applications to communicate and share data. 🌐📡<br><br>
+
+                Why REST? 🚀<br><br>
+                ✅ Simplicity: REST APIs use standard HTTP methods (GET, POST, PUT, DELETE) making it easy to understand and implement. <br>
+                ✅ Scalability: They can handle large-scale operations efficiently. <br>
+                ✅ Flexibility: REST APIs can be used across various platforms and devices. <br>
+                ✅ Statelessness: Each request from a client to the server must contain all the information needed to understand and fulfill the request, making them self-contained and efficient. 🌐 <br>
+              </p>
+            </div>
+        </div>
+
+        
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
